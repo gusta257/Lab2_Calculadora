@@ -7,7 +7,7 @@ import java.io.*;
 /**
  *
  * @author Gustavo
- * @author Luis Esturban
+ * @author Luis Esturban 17256
  */
 public class Main {
 
@@ -19,28 +19,26 @@ public class Main {
         // TODO code application logic here
         System.out.println("Bienvenido");
         
-    try {
-        FileReader fr = new FileReader("C:\\Users\\Luis\\Desktop\\Prueba\\datos.txt");
-        BufferedReader bf = new BufferedReader(fr);
-        String sCadena;
-  
-        while ((sCadena = bf.readLine())!=null) {
-            sCadena = bf.readLine();
-        //Prueba para ver como lee las lineas
-            System.out.println("hola");
-        //Finaliza prueba        
-            System.out.println(sCadena);
-        //Otra forma para leer lineas
-            //sCadena = bf.readLine();
-            //System.out.println(sCadena);
-        //Finaliza forma
- } 
+        try {
+            FileReader fr = new FileReader("C:\\Users\\Luis\\Desktop\\Prueba\\datos.txt");
+            BufferedReader bf = new BufferedReader(fr);
+            String sCadena;
+            while ((sCadena = bf.readLine())!=null) {
+                sCadena = bf.readLine();
+            //Prueba para ver como lee las lineas
+                System.out.println("hola");
+            //Finaliza prueba        
+                System.out.println(sCadena);
+            //Otra forma para leer lineas
+                //sCadena = bf.readLine();
+                //System.out.println(sCadena);
+            //Finaliza forma
+            } 
 
-} catch(Exception e)
-        {
+        }catch(Exception e){
             System.out.println("Documento no encontrado o dañado :( por favor verificar");
-}
-     System.out.println("Gracias por esperar");
-}
+            }
+        System.out.println("Gracias por esperar");
     }
+}
 
