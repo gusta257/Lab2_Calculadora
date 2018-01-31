@@ -25,14 +25,20 @@ public class Main {
         String sCadena;
   
         while ((sCadena = bf.readLine())!=null) {
-        System.out.println(sCadena);
-        //sCadena = bf.readLine();
-        //System.out.println(sCadena);
+            sCadena = bf.readLine();
+        //Prueba para ver como lee las lineas
+            System.out.println("hola");
+        //Finaliza prueba        
+            System.out.println(sCadena);
+        //Otra forma para leer lineas
+            //sCadena = bf.readLine();
+            //System.out.println(sCadena);
+        //Finaliza forma
  } 
 
 } catch(Exception e)
         {
-            System.out.println("valio");
+            System.out.println("Documento no encontrado o dañado :( por favor verificar");
 }
      System.out.println("Gracias por esperar");
 }
