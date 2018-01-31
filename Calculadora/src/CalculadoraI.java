@@ -9,5 +9,5 @@
  * @author Gustavo
  */
 public interface CalculadoraI {
-    
+    String calcular(String exp);
 }
