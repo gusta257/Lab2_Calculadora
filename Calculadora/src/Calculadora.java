@@ -9,6 +9,8 @@
  * @author Gustavo
  */
 public class Calculadora implements CalculadoraI{
+    Stack<Integer> stk = new StackVector<Integer>();
+   
     public String calcular(String exp){
         
         return "";
