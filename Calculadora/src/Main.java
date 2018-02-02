@@ -19,15 +19,18 @@ public class Main {
         // TODO code application logic here
         System.out.println("Bienvenido");
         Calculadora calc = new Calculadora();
-        
+        int contador=0;
         try {
             String sCadena;
+            //Funcion para abrir y leer el documento 
             FileReader fr = new FileReader("datos.txt");
             BufferedReader bf = new BufferedReader(fr);
+            //bucle para hacer las funciones dependiendo de las lineas del documento
             while ((sCadena = bf.readLine())!=null) {       
-                System.out.println(calc.calcular(sCadena));
+                contador=contador+1;
+                System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena));
             } 
-
+        //Sirve si algun dato del documento no sirva
         }catch(Exception e){
             System.out.println("Documento no encontrado o dañado :( por favor verificar");
             }
