@@ -16,9 +16,9 @@ public class StackVector<E> implements Stack<E> {
      public StackVector(){
          lista= new Vector<E>();
      }
-     /* public StackVector(int n){
+      public StackVector(int n){
          lista= new Vector<E>(n);
-     }*/
+     }
      public void push(E item){
           lista.add(item);
      }
