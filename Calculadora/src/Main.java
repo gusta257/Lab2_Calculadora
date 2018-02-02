@@ -18,21 +18,14 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("Bienvenido");
+        Calculadora calc = new Calculadora();
         
         try {
-            FileReader fr = new FileReader("C:\\Users\\Luis\\Desktop\\Prueba\\datos.txt");
-            BufferedReader bf = new BufferedReader(fr);
             String sCadena;
-            while ((sCadena = bf.readLine())!=null) {
-                sCadena = bf.readLine();
-            //Prueba para ver como lee las lineas
-                System.out.println("hola");
-            //Finaliza prueba        
-                System.out.println(sCadena);
-            //Otra forma para leer lineas
-                //sCadena = bf.readLine();
-                //System.out.println(sCadena);
-            //Finaliza forma
+            FileReader fr = new FileReader("datos.txt");
+            BufferedReader bf = new BufferedReader(fr);
+            while ((sCadena = bf.readLine())!=null) {       
+                System.out.println(calc.calcular(sCadena));
             } 
 
         }catch(Exception e){

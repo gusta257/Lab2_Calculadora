@@ -11,11 +11,14 @@ import java.util.*;
  * @author Gustavo
  */
 public class StackVector<E> implements Stack<E> {
-     protected Vector<E> lista=new Vector<E>();
+     protected Vector<E> lista;
      
-      public StackVector(int n){
-         lista= new Vector<E>(n);
+     public StackVector(){
+         lista= new Vector<E>();
      }
+     /* public StackVector(int n){
+         lista= new Vector<E>(n);
+     }*/
      public void push(E item){
           lista.add(item);
      }
