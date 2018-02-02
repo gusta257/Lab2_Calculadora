@@ -8,6 +8,10 @@
  * @author Luis Esturban 17256
  * @author Gustavo De Leon 17085
  */
+
+/**
+ * Interfaz para calculadora
+ */
 public interface CalculadoraI {
     String calcular(String exp);
 }
