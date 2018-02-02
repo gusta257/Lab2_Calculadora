@@ -11,7 +11,7 @@ import java.io.*;
  */
 public class Main {
 
-    
+
     /**
      * @param args the command line arguments
      */
@@ -26,7 +26,7 @@ public class Main {
             FileReader fr = new FileReader("datos.txt");
             BufferedReader bf = new BufferedReader(fr);
             //bucle para hacer las funciones dependiendo de las lineas del documento
-            while ((sCadena = bf.readLine())!=null) {       
+            while ((sCadena = bf.readLine())!=null) {
                 contador=contador+1;
                 System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena));
             } 
@@ -37,4 +37,3 @@ public class Main {
         System.out.println("Gracias por esperar");
     }
 }
-
