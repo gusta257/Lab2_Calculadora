@@ -22,15 +22,24 @@ public class StackVector<E> implements Stack<E> {
      public void push(E item){
           lista.add(item);
      }
-
+    /**
+    * Remueve los valores de la lista
+    * @return lista.remove(size()-1);
+    */
    public E pop(){
         return lista.remove(size()-1);
    }
-
+    /**
+    * Retorna el tamaño de la lista
+    * @return lista.get(size()-1);
+    */
    public E peek(){
        return lista.get(size()-1);
    }
-
+    /**
+    * Verifica si la lista esta vacia
+    * @return vacio
+    */
    public boolean empty(){
        boolean vacio;
        if(lista.isEmpty()==true){
@@ -41,7 +50,10 @@ public class StackVector<E> implements Stack<E> {
        }
        return vacio;
    }
-
+    /**
+    * Retorna el tamaño de la lista
+    * @return lista.size();
+    */
    public int size(){
        return lista.size();
    }
