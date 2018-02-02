@@ -57,5 +57,4 @@ public class StackVector<E> implements Stack<E> {
    public int size(){
        return lista.size();
    }
-    
 }

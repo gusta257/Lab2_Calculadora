@@ -8,6 +8,9 @@
  * @author Luis Esturban 17256
  * @author Gustavo De Leon 17085
  */
+/**
+ * Interfaz para StackVector
+ */
 public interface Stack<E> 
 {
 
