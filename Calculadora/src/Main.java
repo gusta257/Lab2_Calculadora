@@ -30,9 +30,9 @@ public class Main {
                 contador=contador+1;
                 System.out.println(contador+(")Su resultado es: ")+calc.calcular(sCadena));
             } 
-        //Sirve si algun dato del documento no sirva
+        //Sirve si algun dato del documento no sirve
         }catch(Exception e){
-            System.out.println("Documento no encontrado o dañado :( por favor verificar");
+            System.out.println("Fallo de operacion o de documento");
             }
         System.out.println("Gracias por esperar");
     }
