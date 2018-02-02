@@ -6,7 +6,7 @@
 import java.io.*;
 /**
  *
- * @author Gustavo
+ * @author Gustavo De Leon 17085
  * @author Luis Esturban 17256
  */
 public class Main {

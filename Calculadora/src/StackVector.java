@@ -7,8 +7,8 @@ import java.util.*;
 
 
 /**
- *
- * @author Gustavo
+ * @author Luis Esturban 17256
+ * @author Gustavo De Leon 17085
  */
 public class StackVector<E> implements Stack<E> {
      protected Vector<E> lista;
