@@ -27,7 +27,7 @@ public class StackVector<E> implements Stack<E> {
     * @return lista.remove(size()-1);
     */
    public E pop(){
-        return lista.remove(size());
+        return lista.remove(size()-1);
    }
     /**
     * Retorna el tamaño de la lista

@@ -65,7 +65,7 @@ public class Calculadora implements CalculadoraI{
                 }
             }
         }
-        //fin pasa de tipo stack a tipo string  
+        //fin pasa de tipo stack a tipo string 
         fin = pila.pop()+"";
         return fin;
     }
